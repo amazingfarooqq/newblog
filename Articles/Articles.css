@@ -1,0 +1,75 @@
+@font-face {
+    font-family: Barriecito;
+    src: url(../../fonts/Barriecito-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .3s;
+    font-family: inherit;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    z-index: 1111111111111111;
+}
+.progress-bar {
+    height: 5px;
+    width: 0%;
+}
+
+.headnav{
+    position: fixed;
+    top: 0;
+    z-index:111;
+}
+.logo a {
+    text-decoration: none !important;
+    font-size:30px;
+    font-family: 'Barriecito';
+    transition: 1s;
+    color: white !important;
+}
+
+.sideNav_btn {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    font-size: 3px;
+}
+.side_nav_btn_lines {
+    border: 1px solid white;
+    transform: scale(.6);
+}
+.side_nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 230px;
+    z-index: 111;
+    background-color: black;
+    transform: translate(250px);
+}
+.side_nav_out {
+    transform: translate(0px);
+}
+
+.ArticleTitle {
+    font-size: 3em;
+}
+.ArticleInfo{
+    font-size: 0.9em;
+}
+@media only screen and (max-width: 620px) {
+
+    .ArticleTitle { 
+       font-size: 2em !important; 
+    }
+ 
+ }

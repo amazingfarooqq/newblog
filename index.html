@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farooq</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="links/bootstrap/css/bootstrap.min.css">
+    <style>
+        ::-webkit-scrollbar {
+            width: 10px;
+            background-color: #141d35;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 50px;
+            background-color: #0074bd;
+        }
+    </style>
+</head>
+
+<body class="text-light" style="background-color: #0e121d;color: #fff;">
+    <!-- progress bar -->
+    <div class="header">
+        <div class="progress-bar bg-primary" id="progressBar"></div>
+    </div>
+
+    <!-- sidenav -->
+    <div class="side_nav ">
+        <div style="margin-top: 90px;" class="text-center">
+            <a href="Tips/Tips.html" class="w-75 m-1 btn "
+                style="border-radius: 14px;background-color: #0e121d;color: white;margin: 1px !important;">Tips</a>
+            <a href="#" class="w-75 m-1 btn "
+                style="border-radius: 14px;background-color: #0e121d;color: white;margin: 1px !important;">Newsletter</a>
+            <a href="https://farooqdad.netlify.app/#" target="_blank" class="w-75 m-1 btn"
+                style="border-radius: 14px;background-color: #0e121d;color: white;margin: 1px !important;">Portfolio</a>
+            <a href="#" class="w-75 m-1 btn"
+                style="border-radius: 14px;background-color: #0e121d;color: white;margin: 1px !important;">Articles</a>
+
+        </div>
+    </div>
+
+    <div class="container-fluid text-light headnav">
+        <div class="row mx-md-4">
+            <h1 class="col logo"> <a href="#">FarooqTips</a> </h1>
+            <div class="col-1 text-light text-end" style="align-items: center;display: flex;">
+                <div class="row p-2 sideNav_btn">
+                    <div class="col-12 btn-light mt-1 side_nav_btn_lines"></div>
+                    <div class="col-12 btn-light mt-1 side_nav_btn_lines"></div>
+                    <div class="col-12 btn-light mt-1 side_nav_btn_lines"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .ArticleTitle {
+            font-size: 4em;
+        }
+
+        .ArticleInfo {
+            font-size: 1.2em;
+        }
+
+        @media only screen and (max-width: 620px) {
+
+            .ArticleTitle {
+                font-size: 2.7em !important;
+            }
+
+        }
+    </style>
+
+    <!-- Starting -->
+    <div class="container text-light frontPageNewsletter" style="display: flex;align-items: center;">
+
+        <div class="row justify-content-center">
+            <div class="col-12">
+
+                <div class="row py-4 justify-content-center">
+                    <div class="col-11 fw-bolder text-light ArticleTitle">I Help You <span style="color: #6b69d4;"> Learn</span></div>
+                    <div class="col-11 ArticleInfo">Join <b>Farooq Dad Khan </b> developers community of proffesional <b> Web Developers.</b>
+                        <br>
+                        Receive exclusive web dev resources I only share with my <span class="text-danger"> subscribers.</span>
+                    </div>
+                </div>
+            </div>
+
+            <form action="https://www.getrevue.co/profile/amazingfarooqq/add_subscriber" method="post" id="revue-form"
+                name="revue-form" class="col-11" target="_blank">
+                <div class="row px-2">
+                    <input class="col-12 col-md-9 col-lg-6 py-2 fs-5"
+                        style="outline: none;border: none;background-color: #161e31;color: white;"
+                        placeholder="Your email address..." type="email" name="member[email]" id="member_email">
+
+                    <input class="col-12 col-md-3 col-lg-3 py-2 fs-5 "
+                        style="border: none;background-color: #6b69d4;color: white;" type="submit" value="Subscribe"
+                        name="member[subscribe]" id="member_submit">
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+    <!-- Top 3 Articles-->
+    <div class="container-fluid" style="overflow: hidden;">
+        <div class="row my-1 p-5 justify-content-center" style="border-radius: 5px;background-color: #161e31">
+            <h3>Top Reads</h3>
+            <div class="row">
+                <div class="col-12 col-md-4 px-1">
+                    <a href="Articles/ApiExplanation/ApiExplanation.html"> 
+                        <img height="240px" class="col-12 article_title_img px-0"
+                            src="imgs/articles/WebDebRoadmap.jpeg"
+                            style="border-radius: 6px;border: 1px solid rgb(73, 70, 70);" alt=""> </a>
+                </div>
+                <div class="col-12 col-md-4 px-1">
+                    <a href="Tips/Tips.html"> <img height="240px" class="col-12 article_title_img px-0"
+                            src="imgs/articles/Visual Studio Shortcuts.jpg"
+                            style="border-radius: 6px;border: 1px solid rgb(73, 70, 70);" alt=""> </a>
+                </div>
+                <div class="col-12 col-md-4 px-1">
+                    <a href="#"> <img height="240px" class="col-12 article_title_img px-0"
+                            src="imgs/articles/HTMLtoWEB3.jpeg"
+                            style="border-radius: 6px;border: 1px solid rgb(73, 70, 70);" alt=""> </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- intro Section -->
+    <div class="container-fluid py-4" style="background-color: #161e31;">
+        <div class="row justify-content-center py-3">
+            <div class="col-7 col-md-5" style="display: flex;align-items: center;">
+                <div class="row">
+                    <h5 class="col-12">Farooq Dad Khan</h5>
+                    <p class="col-12" style="font-size: 15px;">Have gained many experiences working on different
+                        projects . Also, I'm a hard worker, responsible, flexible and committed person who seeks new
+                        challenges and experiences.</p>
+                </div>
+            </div>
+            <div class="col-3 text-center" style="transform: scale(.6);">
+                <img style="border: 6px solid transparent;outline: 3px solid #0074bd;border-radius: 100%;" width="150px" src="farooq.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Articles Section -->
+    <div class="container my-3 text-light" style="background-color: #161e31;">
+
+        <div class="row">
+
+            <div class="col-12 p-5 p-sm-0 col-sm-10 col-lg-7">
+                <a href="Articles/SimpleJavaScriptProjects/projects.html"
+                    class="row my-5  px-2 py-2 transform_animate text-light"
+                    style="transform: scale(1.06);border-radius: 7px;background-color: #434190;display: flex;align-items: center;text-decoration: none;">
+                    <img class="col-12 col-md-5 px-0" style="border-radius: 5px;" height="250px" src="imgs/articles/jsSimpleToAdvanceProjects.jpg"
+                        alt="">
+                    <div class="col mx-3">
+                        <div class="row">
+                            <div class="col-12">
+                                <button class="btn p-1 mx-2 my-1"
+                                    style="background-color: #27246e;color: white;">JavaScript</button>
+                            </div>
+                            <h5 class="fw-bold">Simple To Advance JavaScript Projects With Source Code For Your Practise
+                            </h5>
+                            <p>Lorem ipsum dolor... </p>
+
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-1">
+                                        <img style="width:  50px;" src="farooq.png" alt="">
+                                    </div>
+                                    <div class="col mx-4" style="display: flex;align-items: center;">
+                                        <div>
+                                            <div class="row px-2">
+                                                <div class="col-12" style="font-size: 12px;">Farooq Dad Khan</div>
+
+                                                <div class="col-12" style="font-size: 12px;">@amazingfarooqq</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+                <a href="Articles/ApiExplanation/ApiExplanation.html"
+                    class="row my-5 px-2 py-2 transform_animate text-light"
+                    style="transform: scale(1.06);border-radius: 7px;background-color: #434190;display: flex;align-items: center;text-decoration: none;">
+                    <img class="col-12 col-md-5 px-0" style="border-radius: 5px;" height="250px" src="imgs/articles/apiExplained.jpg" alt="">
+                    <div class="col mx-3">
+                        <div class="row">
+                            <div class="col-12">
+                                <button class="btn p-1 mx-2 my-1"
+                                    style="background-color: #27246e;color: white;">JavaScript</button>
+                            </div>
+                            <h5 class="fw-bold">What Is An API? Real Life Example</h5>
+                            <p>You are hungry and need something to eat
+
+                                You could go to Store, buy required grocery and cook it yourself but as you see.....
+                            </p>
+
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-1">
+                                        <img style="width:  50px;" src="farooq.png" alt="">
+                                    </div>
+                                    <div class="col mx-4" style="display: flex;align-items: center;">
+                                        <div>
+                                            <div class="row px-2">
+                                                <div class="col-12" style="font-size: 12px;">Farooq Dad Khan</div>
+
+                                                <div class="col-12" style="font-size: 12px;">@amazingfarooqq</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col d-none d-lg-block">
+                <div class="row justify-content-end m-5">
+                    <div class="col-11 my-3">
+                        <div class="row text-center my-2">
+                            <div class="col-12 fs-3 my-3">Find Me</div>
+                        </div>
+                        <div class="row text-center justify-content-center p-0 m-0">
+                            <div class="col-11"
+                                style="background-color: #434190;border-radius: 10px;padding: 25px 20px;">
+
+                                <p>Want me to help you? Let's talk.</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-11 my-3">
+                        <div class="row text-center mt-3">
+                            <div class="col-12 fs-3 my-3">Tags</div>
+                        </div>
+                        <div class="row text-start justify-content-center p-0 m-0">
+                            <div class="col-11"
+                                style="background-color: #434190;border-radius: 10px;padding: 30px 18px;">
+
+                                <button class="btn text-light"
+                                    style="margin: 1px;background-color: #27246e;">HTML</button>
+                                <button class="btn text-light"
+                                    style="margin: 1px;background-color: #27246e;">CSS</button>
+                                <button class="btn text-light"
+                                    style="margin: 1px;background-color: #27246e;">bootStrap</button>
+                                <button class="btn text-light"
+                                    style="margin: 1px;background-color: #27246e;">JavaScript</button>
+                                <button class="btn text-light"
+                                    style="margin: 1px;background-color: #27246e;">PHP</button>
+                                <button class="btn text-light"
+                                    style="margin: 1px;background-color: #27246e;">Laravel</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-11 my-3">
+                        <div class="row text-center mt-2">
+                            <div class="col-12 fs-3 my-3">Popular</div>
+                            <div class="col-12">
+
+                                <div class="row p-2 m-2 btn  text-light" style="background-color: #4441908f;">
+                                    <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Lorem ipsum
+                                        dolor, sit amet consectetur adipisicing elit. Eius adipisci voluptas cumque
+                                        aperiam voluptatem, </p>
+
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12" style="font-size: 12px;">Farooq Dad Khan</div>
+                                            <div class="col-12" style="font-size: 12px;">@amazingfarooqq</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row p-2 m-2 btn text-light" style="background-color: #4441908f;">
+                                    <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Lorem ipsum
+                                        dolor, sit amet consectetur adipisicing elit. Eius adipisci voluptas cumque
+                                        aperiam voluptatem, </p>
+
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12" style="font-size: 12px;">Farooq Dad Khan</div>
+                                            <div class="col-12" style="font-size: 12px;">@amazingfarooqq</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer class="container-fluid py-5" style="background-color: #161e31;">
+        <div class="row">
+            <div class="col-12 col-md-8 p-4">
+                <h3>Farooq Dad Khan</h1>
+                    Have gained many experiences working on different projects . Also, I'm a hard worker, responsible,
+                    flexible and committed person who seeks new challenges and experiences.
+
+
+            </div>
+            <div class="col-12 col-md-4 p-4">
+
+                <div class="subscribe-form-holder">
+                    <h3 class="form-title fs-6">Subscribe to my email newsletter</h3>
+
+                    <form action="https://www.getrevue.co/profile/amazingfarooqq/add_subscriber" method="post"
+                        id="revue-form" name="revue-form" class="p-0 py-3 m-0" target="_blank">
+                        <div class="row revue-form-group">
+                            <input class="col-12 col-md-7 p-2" style="outline: none;border: 0px;"
+                                placeholder="Your email address..." type="email" name="member[email]" id="member_email">
+
+                            <input class="col-12 border-start col-md btn btn-light"
+                                style="font-size: 18px;border-radius: 0px;" type="submit" value="Subscribe"
+                                name="member[subscribe]" id="member_submit">
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+
+    <script>
+
+        'farooq'.length // 6
+        'farooq'[1] // a
+        'farooq'.includes('oo') // true
+        'farooq'.indexOf('ar') // 1
+        'farooq'.startsWith('f') // true 
+        'farooq'.endsWith('f') // false
+        'farooq'.slice(0, 5) // faroo
+        'farooq'.slice(4) // oq
+        'farooq'.toUpperCase() // FAROOQ
+        'FARooQ'.toLowerCase() // farooq
+        'farooq'.replace('oo', 'ff') // farffq 
+        'farooq'.repeat(3) // farooqfarooqfarooq
+        'far ooq'.split('') // ['f', 'a', 'r', ' ', 'o', 'o', 'q']
+        'far ooq'.split(' ') // ['far', 'ooq']
+
+    </script>
+
+</body>
+
+</html>
