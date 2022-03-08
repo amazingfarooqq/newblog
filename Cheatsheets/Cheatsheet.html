@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarooqTips</title>
+    <link rel="stylesheet" href="../links/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="cheatsheet.css">
+    <style>
+        ::-webkit-scrollbar {
+            width: 10px;
+            background-color: #141d35;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 50px;
+            background-color: #0074bd;
+        }
+    </style>
+
+</head>
+
+<body class="text-light" style="background-color: #0e121d;color: black;">
+
+    <!-- sidenav -->
+    <div class="side_nav ">
+        <div style="margin-top: 90px;" class="text-center">
+            <a href="Tips/Tips.html" class="w-75 m-1 btn "
+                style="border-radius: 14px;background-color: #0e121d;color: white;margin: 1px !important;">Tips</a>
+            <a href="#" class="w-75 m-1 btn "
+                style="border-radius: 14px;background-color: #0e121d;color: white;margin: 1px !important;">Newsletter</a>
+            <a href="https://farooqdad.netlify.app/#" target="_blank" class="w-75 m-1 btn"
+                style="border-radius: 14px;background-color: #0e121d;color: white;margin: 1px !important;">Portfolio</a>
+            <a href="#" class="w-75 m-1 btn"
+                style="border-radius: 14px;background-color: #0e121d;color: white;margin: 1px !important;">Articles</a>
+
+        </div>
+    </div>
+    <!-- nav -->
+    <div class="container-fluid px-4 text-light px-md-5 headnav">
+        <div class="row">
+            <h1 class="col logo m-2"> <a href="../index.html">FarooqTips</a> </h1>
+            <div class="col-1 text-light text-end" style="align-items: center;display: flex;">
+                <div class="row p-2 sideNav_btn">
+                    <div class="col-12 btn-light mt-1 side_nav_btn_lines"></div>
+                    <div class="col-12 btn-light mt-1 side_nav_btn_lines"></div>
+                    <div class="col-12 btn-light mt-1 side_nav_btn_lines"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid text-center"
+        style="display: flex;justify-content: center;align-items: center;height: 400px;background-color: #0e121d ;">
+        <div class="col-12">
+            <div class="row text-center justify-content-center">
+                <div class="col-12 fw-bold" style="font-size: 70px;color: #6b69d4;">CheatSheets</div>
+                <div class="col-12">
+                    <img width="200px" src="../imgs/Untitled.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid mb-3 px-4 py-4" style="background-color: #161e31;">
+
+        <div class="row text-center">
+            <div class="col-12" id="stacks">
+                <button class="btn fs-6 m-0 " style="background-color: #6b69d4;color: white;" id="ALL"
+                    onclick="ALL()">ALL</button>
+                <button class="btn fs-6 m-0 " style="background-color: #6b69d4;color: white;" id="HTML_btn"
+                    onclick="HTML_btn()">HTML</button>
+                <button class="btn fs-6 m-0 " style="background-color: #6b69d4;color: white;" id="CSS_btn"
+                    onclick="CSS_btn()">CSS</button>
+                <button class="btn fs-6 m-0 " style="background-color: #6b69d4;color: white;" id="JAVASCRIPT_btn"
+                    onclick="JAVASCRIPT_btn()">JavaScript</button>
+            </div>
+        </div>
+       
+        <!-- <div class="row py-3 justify-content-center">
+            <input type="text" class="col-6 fs-5" placeholder="search" id="search_tip_button">
+        </div> -->
+        <div class="row" style="padding: 50px 0;">
+            <div class="col-12 col-sm-11 col-md-9 p-0 m-0">
+                <div class="row justify-content-center" id="cheatsheets">
+
+                </div>
+            </div>
+
+            <div class="col d-none d-md-block">
+                <div class="row">
+                    <div class="col-11 mb-3">
+                        <div class="row text-center">
+                            <div class="col-12 fs-3 mb-3">Find Me</div>
+                        </div>
+                        <div class="row text-center justify-content-center ">
+                            <div class="col-11"
+                                style="background-color: #434190;border-radius: 10px;padding: 25px 20px;">
+
+                                <p>Want me to help you? Let's talk.</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-11 my-3">
+                        <div class="row text-center mt-3">
+                            <div class="col-12 fs-3 my-3">Tags</div>
+                        </div>
+                        <div class="row text-start justify-content-center p-0 m-0">
+                            <div class="col-11"
+                                style="background-color: #434190;border-radius: 10px;padding: 30px 18px;">
+
+                                <button class="btn text-light"
+                                    style="margin: 1px;background-color: #27246e;">HTML</button>
+                                <button class="btn text-light"
+                                    style="margin: 1px;background-color: #27246e;">CSS</button>
+                                <button class="btn text-light"
+                                    style="margin: 1px;background-color: #27246e;">bootStrap</button>
+                                <button class="btn text-light"
+                                    style="margin: 1px;background-color: #27246e;">JavaScript</button>
+                                <button class="btn text-light"
+                                    style="margin: 1px;background-color: #27246e;">PHP</button>
+                                <button class="btn text-light"
+                                    style="margin: 1px;background-color: #27246e;">Laravel</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="container-fluid py-5" style="background-color: #161e31;">
+        <div class="row">
+            <div class="col-12 col-md-8 p-4">
+                <h3>Farooq Dad Khan</h1>
+                    Have gained many experiences working on different projects . Also, I'm a hard worker, responsible,
+                    flexible and committed person who seeks new challenges and experiences.
+            </div>
+            <div class="col-12 col-md-4 p-4">
+
+                <div class="subscribe-form-holder">
+                    <h3 class="form-title fs-6">Subscribe to my email newsletter</h3>
+
+                    <form action="https://www.getrevue.co/profile/amazingfarooqq/add_subscriber" method="post"
+                        id="revue-form" name="revue-form" class="p-0 py-3 m-0" target="_blank">
+                        <div class="row revue-form-group">
+                            <input class="col-12 col-md-7 p-2" style="outline: none;border: 0px;"
+                                placeholder="Your email address..." type="email" name="member[email]" id="member_email">
+
+                            <input class="col-12 border-start col-md btn btn-light"
+                                style="font-size: 18px;border-radius: 0px;" type="submit" value="Subscribe"
+                                name="member[subscribe]" id="member_submit">
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="cheatsheet.js"></script>
+</body>
+
+</html>

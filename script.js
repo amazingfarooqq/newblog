@@ -13,9 +13,9 @@ window.onscroll = function () {
 
 window.addEventListener('scroll' , () => {
     let header = document.querySelector('.headnav')
+    let toTop = document.querySelector('.toTop')
     header.classList.toggle('scroll_headnav_active', window.scrollY > 0)
-    intro_section = document.querySelector('.intro_section')
-    intro_section.classList.toggle('scroll_intro_active', window.scrollY > 300)
+    toTop.classList.toggle('displayBlock', window.scrollY > 100)
 })
 
 let sideNav_btn = document.querySelector('.sideNav_btn')

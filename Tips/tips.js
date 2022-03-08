@@ -1,6 +1,6 @@
 let tips = document.getElementById('tips')
 
-const tipsData = [
+const Items = [
     {
         stack: 'HTML',
         title: 'Add Tooltip',
@@ -55,8 +55,27 @@ const tipsData = [
         desc: 'Find Sum of an array by following condition',
         imgUrl: 'tips imgs/js/js5.png'
     },
+    {
+        stack: 'CHEATSHEET',
+        title: 'Sum of An array',
+        desc: 'Find Sum of an array by following condition',
+        imgUrl: 'tips imgs/js/js5.png'
+    },
+    {
+        stack: 'CHEATSHEET',
+        title: 'Sum of An array',
+        desc: 'Find Sum of an array by following condition',
+        imgUrl: 'tips imgs/js/js5.png'
+    },
+    {
+        stack: 'CHEATSHEET',
+        title: 'Sum of An array',
+        desc: 'Find Sum of an array by following condition',
+        imgUrl: 'tips imgs/js/js5.png'
+    },
 
 ]
+
 
 
 
@@ -95,12 +114,12 @@ const d = 'farooq'
 const ALL = () => {
 
     tips.innerHTML = ''
-    tipsData.map(tip => {
-        tips.innerHTML += `<div class="col-8 col-md-5 m-1 px-0 pt-3 tipCard text-light" style="border-radius: 13px;background-color: #0e121d;overflow: hidden;">
-        <h6 class="stack m-0 px-4 text-primary" style="font-size: 13px;">${tip.stack}</h6>
-        <h5 class="tip_title m-0 px-4">${tip.title}</h5>
-        <p class="m-0 px-4 text-warning">${tip.desc}</p>
-        <img class="img-fluid tip_img p-2" src="${tip.imgUrl}" alt="img">
+    Items.map(item => {
+        tips.innerHTML += `<div class="col-8 col-md-5 m-1 h-100 px-0 pt-3 text-light" style="border-radius: 13px;background-color: #0e121d;overflow: hidden;">
+        <h6 class="stack m-0 px-4 text-primary" style="font-size: 13px;">${item.stack}</h6>
+        <h5 class="m-0 px-4">${item.title}</h5>
+        <p class="m-0 px-4 text-warning">${item.desc}</p>
+        <img class="img-fluid p-2" src="${item.imgUrl}" alt="img">
         <div/>`
     })
 }
@@ -108,68 +127,39 @@ const ALL = () => {
 ALL()
 
 
-const HTML_tips = () => {
+const HTML_btn = () => {
     tips.innerHTML = ''
-    let HTML_filter = tipsData.filter(tip => tip.stack === 'HTML')
-    HTML_filter.map(tip => {
-        tips.innerHTML += `<div class="col-8 col-md-5 m-1 px-0 pt-3 tipCard text-light" style="border-radius: 13px;background-color: #0e121d;overflow: hidden;">
-        <h6 class="stack m-0 px-4 text-primary" style="font-size: 13px;">${tip.stack}</h6>
-        <h5 class="tip_title m-0 px-4">${tip.title}</h5>
-        <p class="m-0 px-4 text-warning">${tip.desc}</p>
-        <img class="img-fluid tip_img p-2" src="${tip.imgUrl}" alt="img">
+    let HTML_filter = Items.filter(item => item.stack === 'HTML')
+    HTML_filter.map(item => {
+        tips.innerHTML += `<div class="col-8 col-md-5 m-1 h-100 px-0 pt-3 text-light" style="border-radius: 13px;background-color: #0e121d;overflow: hidden;">
+        <h6 class="stack m-0 px-4 text-primary" style="font-size: 13px;">${item.stack}</h6>
+        <h5 class="m-0 px-4">${item.title}</h5>
+        <p class="m-0 px-4 text-warning">${item.desc}</p>
+        <img class="img-fluid p-2" src="${item.imgUrl}" alt="img">
         <div/>`
     })
 }
-const CSS_tips = () => {
+const CSS_btn = () => {
     tips.innerHTML = ''
-    let CSS_filter = tipsData.filter(tip => tip.stack === 'CSS')
-    CSS_filter.map(tip => {
-        tips.innerHTML += `<div class="col-8 col-md-5 m-1 px-0 pt-3 tipCard text-light" style="border-radius: 13px;background-color: #0e121d;overflow: hidden;">
-        <h6 class="stack m-0 px-4 text-primary" style="font-size: 13px;">${tip.stack}</h6>
-        <h5 class="tip_title m-0 px-4">${tip.title}</h5>
-        <p class="m-0 px-4 text-warning">${tip.desc}</p>
-        <img class="img-fluid tip_img p-2" src="${tip.imgUrl}" alt="img">
+    let CSS_filter = Items.filter(item => item.stack === 'CSS')
+    CSS_filter.map(item => {
+        tips.innerHTML += `<div class="col-8 col-md-5 m-1 h-100 px-0 pt-3 text-light" style="border-radius: 13px;background-color: #0e121d;overflow: hidden;">
+        <h6 class="stack m-0 px-4 text-primary" style="font-size: 13px;">${item.stack}</h6>
+        <h5 class="m-0 px-4">${item.title}</h5>
+        <p class="m-0 px-4 text-warning">${item.desc}</p>
+        <img class="img-fluid p-2" src="${item.imgUrl}" alt="img">
         <div/>`
     })
 }
-const JAVASCRIPT_tips = () => {
+const JAVASCRIPT_btn = () => {
     tips.innerHTML = ''
-    let JAVASCRIPT_filter = tipsData.filter(tip => tip.stack === 'JAVASCRIPT')
-    JAVASCRIPT_filter.map(tip => {
-        tips.innerHTML += `<div class="col-8 col-md-5 m-1 px-0 pt-3 tipCard text-light" style="border-radius: 13px;background-color: #0e121d;overflow: hidden;">
-        <h6 class="stack m-0 px-4 text-primary" style="font-size: 13px;">${tip.stack}</h6>
-        <h5 class="tip_title m-0 px-4">${tip.title}</h5>
-        <p class="m-0 px-4 text-warning">${tip.desc}</p>
-        <img class="img-fluid tip_img p-2" src="${tip.imgUrl}" alt="img">
+    let JAVASCRIPT_filter = Items.filter(item => item.stack === 'JAVASCRIPT')
+    JAVASCRIPT_filter.map(item => {
+        tips.innerHTML += `<div class="col-8 col-md-5 m-1 h-100  px-0 pt-3 text-light" style="border-radius: 13px;background-color: #0e121d;overflow: hidden;">
+        <h6 class="stack m-0 px-4 text-primary" style="font-size: 13px;">${item.stack}</h6>
+        <h5 class="m-0 px-4">${item.title}</h5>
+        <p class="m-0 px-4 text-warning">${item.desc}</p>
+        <img class="img-fluid p-2" src="${item.imgUrl}" alt="img">
         <div/>`
     })
 }
-
-
-// let data = document.getElementsByClassName('data')
-
-// //get input
-// let input = document.getElementById("search_tip_button");
-// //get list of value
-// let tipCard = document.querySelectorAll(".tips .tipCard");
-// let tipTitle = document.querySelectorAll(".tips .tipCard .tip_title");
-
-// //function search on the list.
-// function search() {
-//     for (let i = 0; i < tipTitle.length; i++) {
-//         //check if the element contains the value of the input
-//         if (tipTitle[i].innerText.toLowerCase().includes(input.value.toLowerCase())) {
-//             tipCard[i].style.display = "block";
-//         } else {
-//             tipCard[i].style.display = "none";
-//         }
-//     }
-// }
-
-//to the change run search.
-// input.addEventListener('input', search);
-
-
-
-
-

@@ -1,0 +1,61 @@
+@font-face {
+    font-family: Barriecito;
+    src: url(../fonts/Barriecito-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .3s;
+    font-family: sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index:111;
+    padding: 10px 0;
+}
+
+.headnav {
+    position: fixed;
+    top: 0;
+    z-index: 111;
+}
+.logo a {
+    text-decoration: none !important;
+    font-size:30px;
+    font-family: 'Barriecito';
+    transition: 1s;
+    color: white !important;
+}
+.scroll_headnav_active {
+    background: #27246e;
+    padding: 0px 0;
+}
+
+.sideNav_btn {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    font-size: 3px;
+}
+.side_nav_btn_lines {
+    border: 1px solid white;
+    transform: scale(.6);
+}
+
+
+.side_nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 230px;
+    z-index: 111;
+    background-color: black;
+    transform: translate(250px);
+}
+.side_nav_out {
+    transform: translate(0px);
+}
